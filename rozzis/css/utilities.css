@@ -1,0 +1,96 @@
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.btn-primary {
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #ffc420;
+    color: #000;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #000;
+    color: #fff;
+}
+
+.flex-columns {
+    display: flex;
+}
+
+.col {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;
+    width: 0;
+    line-height: 3.5rem;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.col::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.col * {
+    z-index: 3;
+}
+
+.col h2 {
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+.col h2:hover {
+    color: #ffc420;
+    cursor: pointer;
+}
+
+.col .btn-primary {
+    font-size: 25px;
+    padding: 10px 40px;
+}
+
+
+.short-container {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.short-container .btn-primary {
+    font-size: 25px;
+    padding: 10px 40px;
+}
+
